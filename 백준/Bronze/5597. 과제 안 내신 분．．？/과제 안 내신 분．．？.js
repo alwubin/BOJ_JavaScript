@@ -13,7 +13,7 @@ for (let j = 0; j < 30; j++) { //제출한 학생 번호를 전체 학생 번호
     if (data.includes(studentNum[j]) == false) //제출 배열에 학생 번호가 존재하지 않
         notSubmit.push(studentNum[j]); //제출 안한 학생 배열에 추가
 }
-
-notSubmit.sort((a,b)=>a-b); //
+//여러자릿수 오름차순 정렬시, a, b에 배열값을 넣어 순차적으로 비교하여 재정렬, a>b 양수 a<b 음수 리턴됨
+notSubmit.sort((a,b)=>a-b);
 console.log(notSubmit[0]);
 console.log(notSubmit[1]);
